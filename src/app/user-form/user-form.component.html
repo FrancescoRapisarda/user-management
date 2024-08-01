@@ -1,0 +1,23 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Nome:</label>
+    <input id="name" formControlName="name" type="text">
+  </div>
+  <div>
+    <label for="surname">Cognome:</label>
+    <input id="surname" formControlName="surname" type="text">
+  </div>
+  <div>
+    <label for="gender">Sesso:</label>
+    <select id="gender" formControlName="gender">
+      <option value="uomo">Uomo</option>
+      <option value="femmina">Femmina</option>
+      <option value="altro">Altro</option>
+    </select>
+  </div>
+  <div>
+    <label for="active">Attiva:</label>
+    <input id="active" formControlName="active" type="checkbox">
+  </div>
+  <button type="submit">Invia</button>
+</form>
