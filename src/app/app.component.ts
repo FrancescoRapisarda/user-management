@@ -1,14 +1,12 @@
+// src/app/app.component.ts
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { UserComponent } from "./user/user.component";
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, UserComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [CommonModule, RouterModule],
+  template: '<router-outlet></router-outlet>',
 })
-export class AppComponent {
-  title = 'user-management';
-}
+export class AppComponent {}

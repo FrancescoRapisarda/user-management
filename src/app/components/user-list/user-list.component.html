@@ -1,0 +1,21 @@
+<div class="user-list-container">
+  <h1>User List</h1>
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.name }} {{ user.surname }} - {{ user.gender }} - {{ user.active ? 'Attivo' : 'Non attivo' }}
+    <a [routerLink]="['/user-form', user.id]">Edit</a>
+  </li>
+</ul>
+<button class="add-user-button" [routerLink]="['/user-form']">Add User</button>
+<button class="show-added-users-button" (click)="showAddedUsers()">Show Added Users</button>
+
+<div *ngIf="showAddedUsersList">
+  <h2>Added Users</h2>
+  <ul>
+    <li *ngFor="let user of addedUsers">
+      {{ user.name }} {{ user.surname }} - {{ user.gender }} - {{ user.active ? 'Attivo' : 'Non attivo' }}
+    </li>
+  </ul>
+</div>
+</div>
+

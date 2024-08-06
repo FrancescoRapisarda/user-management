@@ -1,9 +1,0 @@
-<app-user-form [userToEdit]="userToEdit" (userAdded)="addUser($event)" (userUpdated)="updateUser($event)"></app-user-form>
-
-<h1>Lista Utenti</h1>
-<ul>
-  <li *ngFor="let user of users">
-    {{ user.name }} {{ user.surname }} - {{ user.gender }} - {{ user.active ? 'Attiva' : 'Non attiva' }}
-    <button (click)="editUser(user)">Modifica</button>
-  </li>
-</ul>
