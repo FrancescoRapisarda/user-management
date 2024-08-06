@@ -13,7 +13,8 @@ export class UserService {
   getUsers(): User[] {
     return this.users;
   }
-
+  
+  
   getUserById(id: number): User | undefined {
     return this.users.find(user => user.id === id);
   }
