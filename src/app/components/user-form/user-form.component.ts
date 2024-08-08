@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { UserService } from '../../services/user.service';
 import { User } from '../../interface/user.interface';
 
+
 @Component({
   selector: 'app-user-form',
   standalone: true,
@@ -55,6 +56,6 @@ export class UserFormComponent implements OnInit {
   }
   
    goBack(): void {
-    this.router.navigate(['/users']);
+    this.router.navigate(['/home']);
   }
 }

@@ -1,26 +1,9 @@
-.container-user-form {
+.user-list-container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.submit-button {
-    margin-left: 10px;
-    border: none;
-    padding: 10px 20px;
-    /* width: 80px;
-    height: 20px; */
-    border-radius: 5px;
-    background-color: #006B3F;
-    color: white;
-    cursor: pointer;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.submit-button:hover {
-    background-color: #046A38; 
-    transform: scale(1.1);
 }
 
 .back-to-home-button {
@@ -30,9 +13,9 @@
     height: 40px;
     border-radius: 6px;
     background-color: #FF4F19;
-    color: white;
+    color: #FFFF;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
@@ -40,5 +23,23 @@
 
 .back-to-home-button:hover {
      background-color: #D03228;
+    transform: scale(1.1);
+}
+
+.delete-button {
+     margin-left: 10px;
+    border: 0;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #9c0000; 
     transform: scale(1.1);
 }

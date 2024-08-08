@@ -8,6 +8,7 @@ import { User } from '../interface/user.interface';
 export class UserService {
   private users: User[] = [];
   private idCounter = 1;
+  
 
 
   getUsers(): User[] {
@@ -29,5 +30,9 @@ export class UserService {
     if (index !== -1) {
       this.users[index] = user;
     }
+  }
+  
+  deleteUser(id: number): void {
+    this.users = this.users.filter(user => user.id !== id);
   }
 }

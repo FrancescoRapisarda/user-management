@@ -1,27 +1,9 @@
 .user-list-container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.show-added-users-button {
-    border: 0;
-    margin-top: 30px;
-    width: 150px;
-    height: 40px;
-    border-radius: 6px;
-    background-color: rgb(245, 245, 146);
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.show-added-users-button:hover {
-    background-color: yellow; 
-    transform: scale(1.1);
 }
 
 
@@ -31,15 +13,37 @@
     width: 150px;
     height: 40px;
     border-radius: 6px;
-    background-color: #357e39;
+    background-color: #71D1BA;
     color: white;
     font-size: 14px;
+    font-weight: 700;
     cursor: pointer;
     font-family: Georgia, 'Times New Roman', Times, serif;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .add-user-button:hover {
-    background-color: green; 
+    background-color: #00B2A9;
+    transform: scale(1.1);
+}
+
+
+.show-added-users-button {
+    border: 0;
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #00B3E3;
+    color: #FFFF;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.show-added-users-button:hover {
+    background-color: #0072CE;
     transform: scale(1.1);
 }
